@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>台灣款款行</title>
+  <style>
+    /* THE BODY AND THE WRAPPER */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #f2f2f2;
+      padding: 20px;
+      text-align: center;
+      height: 640px;
+      width: 100%;
+      position: relative;
+      background-image: url("./imgs/titlepic.jpg");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+      background-size: cover;
+    }
+    h1 {
+      color: #333;
+      margin: 0;
+      position: absolute;
+      bottom: 20%;
+      right: 10%;
+    }
+    nav {
+      background-color: #333;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    main {
+      padding: 20px;
+      background-color: #FFFCF9;
+    }
+    section {
+      margin-bottom: 20px;
+    }
+    h2 {
+      color: #333;
+      margin: 0;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 30px;
+      text-align: center;
+    }
+    video{
+      max-width: 640px;
+      max-height: 480px;
+    }
+  </style>
+  <style>
+    .carousel {
+      width: 500px;
+      height: 400px;
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 20px;
+    }
+
+    .carousel-inner {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .carousel-item {
+      width: 100%;
+      height: 100%;
+      flex-shrink: 0;
+    }
+
+    .carousel-item img {
+      width:500px;
+      height:400px;
+      object-fit: cover;
+    }
+
+    .carousel-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 24px;
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 10px;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .carousel-btn:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .carousel-btn.prev {
+      left: 10px;
+    }
+
+    .carousel-btn.next {
+      right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>台灣款款行</h1>
+  </header>
+  
+  <nav>
+    <a href="#intro">簡介</a>
+    <a href="#popular-attractions-01">台東</a>
+    <a href="#popular-attractions-02">花蓮</a>
+    <a href="#popular-attractions-03">台北</a>
+    <a href="#popular-attractions-04">台中</a>
+    <a href="#popular-attractions-05">人文、廟會</a>
+    <a href="#popular-attractions-06">屏東</a>
+
+  </nav>
+  
+  <main>
+    <section id="intro">
+      <h2>簡介</h2>
+      <p>己款款的步伐漫遊台灣，感受在地的文化、山與海的魅力</p>
+    </section>
+    
+    <section >
+      <h2>島嶼的款款走點</h2>
+      <ul>
+        <li id="popular-attractions-01">
+          <h3>景點1 - 台東森林公園</h3>
+           <p>台東森林公園是個海濱公園，生態豐富多樣性，<br>公園旁的小白屋似台版的霍爾-移動城堡。</p>
+          <div class="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item">
+                <img src="./imgs/Image01.jpg" alt="Image01">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image02.jpg" alt="Image02">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image03.jpg" alt="Image03">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image04.jpg" alt="Image04">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image05.jpg" alt="Image05">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image06.jpg" alt="Image06">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image07.jpg" alt="Image07">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image08.jpg" alt="Image08">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image09.jpg" alt="Image09">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image10.jpg" alt="Image10">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image201.jpg" alt="Image201">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image202.jpg" alt="Image202">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image203.jpg" alt="Image203">
+              </div>
+            </div>
+            <div class="carousel-btn prev">&#10094;</div>
+            <div class="carousel-btn next">&#10095;</div>
+          </div>
+          <p>地圖連結：</p>
+          <ul><li><a href="https://www.google.com/maps/@22.7396879,121.0290023,12z?authuser=0/">台東森林公園</a>
+          </li>
+          
+        </li>
+        <li id="popular-attractions-02">
+          <h3>景點2 - 花蓮</h3>
+          <p>白楊步道全國2.1公里平坦好走，飽覽壯闊峽谷，途經七個隧道，
+            <br>隧道內有蝙蝠棲憩，感受水簾洞沁涼湧泉。</p>
+          <p>新城教堂是一座療癒的異國建築，外觀似船的森林樹屋。</p>
+          <p></p>
+          <div class="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item">
+                <img src="./imgs/Image301.jpg" alt="Image301">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image302.jpg" alt="Image302">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image317.jpg" alt="Image317">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image318.jpg" alt="Image318">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image319.jpg" alt="Image319">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image320.jpg" alt="Image320">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image321.jpg" alt="Image321">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image322.jpg" alt="Image322">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image323.jpg" alt="Image323">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image303.jpg" alt="Image303">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image304.jpg" alt="Image304">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image305.jpg" alt="Image305">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image306.jpg" alt="Image306">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image307.jpg" alt="Image307">
+              </div>
+            </div>
+            <div class="carousel-btn prev">&#10094;</div>
+            <div class="carousel-btn next">&#10095;</div>
+          </div>
+           <p>地圖連結：</p>
+          <ul><li><a href="https://www.google.com/maps/@24.1867275,121.4774775,14.35z?authuser=0">太魯閣白楊步道</a>
+          <ul><li><a href="https://www.google.com/maps/search/%E8%8A%B1%E8%93%AE%E6%96%B0%E5%9F%8E%E6%95%99%E5%A0%82/@24.1864608,121.3288602,11z/data=!3m1!4b1?authuser=0">新城教堂</a>
+          </li>
+         </li>
+        
+        <li id="popular-attractions-03">
+          <h3>景點3 - 台北</h3>
+          <p>七星山標高1120公尺，是陽明山國家公園第一高峰，是一個複式火山，
+            <br>峰頂中置有一等三角點，山頂視野寬闊，大台北地區一覽無遺。
+          </p>
+          <div class="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item">
+                <img src="./imgs/Image48.jpg" alt="Image48">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image50.jpg" alt="Image50">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image51.jpg" alt="Image51">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image52.jpg" alt="Image52">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image53.jpg" alt="Image53">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image54.jpg" alt="Image54">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image55.jpg" alt="Image55">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image56.jpg" alt="Image56">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image57.jpg" alt="Image57">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image58.jpg" alt="Image58">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image59.jpg" alt="Image59">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image60.jpg" alt="Image60">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image61.jpg" alt="Image61">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image45.jpg" alt="Image45">
+              </div>
+            </div>
+            <div class="carousel-btn prev">&#10094;</div>
+            <div class="carousel-btn next">&#10095;</div>
+            </div>
+           </li>
+
+           <li id="popular-attractions-04"> 
+           <h3>景點4 - 台中</h3>
+           <p>秋紅谷黑天鵝喜獲麟「鵝」，5隻天鵝寶寶池塘優游嬉戲，超賣萌。</p>
+           <p>石崗土牛客家文化館，保留傳統的客家文化，是傳承石崗劉家夥房遺址。</p>
+           <div class="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item">
+                <img src="./imgs/Image85.jpg" alt="Image85">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image86.jpg" alt="Image86">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image87.jpg" alt="Image87">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image88.jpg" alt="Image88">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image89.jpg" alt="Image89">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image90.jpg" alt="Image90">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image351.jpg" alt="Image351">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image352.jpg" alt="Image352">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image353.jpg" alt="Image353">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image354.jpg" alt="Image354">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image355.jpg" alt="Image355">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image356.jpg" alt="Image356">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image357.jpg" alt="Image357">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image358.jpg" alt="Image358">
+              </div>
+            </div>
+            <div class="carousel-btn prev">&#10094;</div>
+            <div class="carousel-btn next">&#10095;</div>
+           </div>
+          </li>
+
+          <li id="popular-attractions-05"> 
+           <h3>人文5 - 廟會</h3>
+           <p>廟會遶境是台灣特有文化，是古早的人情味，、信仰與文化。
+            <br>「三月瘋媽祖」，更是島嶼的文化盛事之一。</p>
+           <div class="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item">
+                <img src="./imgs/Image64.jpg" alt="Image64">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image66.jpg" alt="Image66">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image65.jpg" alt="Image65">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image67.jpg" alt="Image67">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image68.jpg" alt="Image68">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image69.jpg" alt="Image69">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image70.jpg" alt="Image70">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image71.jpg" alt="Image71">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image72.jpg" alt="Image72">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image73.jpg" alt="Image74">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image75.jpg" alt="Image75">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image76.jpg" alt="Image76">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image77.jpg" alt="Image77">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image78.jpg" alt="Image78">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image79.jpg" alt="Image79">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image80.jpg" alt="Image80">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image81.jpg" alt="Image81">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image82.jpg" alt="Image82">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image83.jpg" alt="Image83">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image84.jpg" alt="Image84">
+              </div>
+            </div>
+            <div class="carousel-btn prev">&#10094;</div>
+            <div class="carousel-btn next">&#10095;</div>
+           </div>
+
+
+           <video src="./video/IMG9859.mp4" controls></video>
+           </li>
+
+         <li id="popular-attractions-06">
+           <h3>景點6 - 屏東</h3>
+           <p>屏東哈尤溪被譽稱為「雲豹之湯」，隠蘊在屏東霧台，
+            <br>以高聳的七彩岩礕與清澈見底的溪水相映成絕色美景。
+           </p>
+
+           <div class="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item">
+                <img src="./imgs/Image13.jpg" alt="Image13">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image14.jpg" alt="Image14">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image15.jpg" alt="Image15">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image16.jpg" alt="Image16">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image17.jpg" alt="Image18">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image19.jpg" alt="Image19">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image20.jpg" alt="Image20">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image21.jpg" alt="Image21">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image22.jpg" alt="Image22">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image23.jpg" alt="Image23">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image24.jpg" alt="Image25">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image26.jpg" alt="Image26">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image27.jpg" alt="Image27">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image28.jpg" alt="Image28">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image29.jpg" alt="Image29">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image30.jpg" alt="Image30">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image31.jpg" alt="Image31">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image32.jpg" alt="Image32">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image33.jpg" alt="Image33">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image34.jpg" alt="Image34">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image35.jpg" alt="Image35">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image36.jpg" alt="Image36">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image37.jpg" alt="Image37">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image38.jpg" alt="Image38">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image39.jpg" alt="Image39">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image40.jpg" alt="Image40">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image42.jpg" alt="Image42">
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/Image43.jpg" alt="Image43">
+              </div>
+            <div class="carousel-btn prev">&#10094;</div>
+            <div class="carousel-btn next">&#10095;</div>
+           </div>
+          </li>
+         </ul>
+
+         </section>
+           
+          <video src="./video/IMG_9996.mov" controls></video>
+           </main>
+           
+      
+  <footer>
+    <p>版權所有 &copy; 2023 空大111下行動網頁製作與應用習作</p>
+                  <p>ZZZ001 108222425 黃亞蘭</p>
+  </footer>
+
+  <script>
+    const carousels = document.querySelectorAll('.carousel');
+
+    carousels.forEach((carousel) => {
+      const carouselInner = carousel.querySelector('.carousel-inner');
+      const carouselItems = carousel.querySelectorAll('.carousel-item');
+      const prevBtn = carousel.querySelector('.prev');
+      const nextBtn = carousel.querySelector('.next');
+      let currentIndex = 0;
+
+      prevBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + carouselItems.length) % carouselItems.length;
+        updateCarousel();
+      });
+
+      nextBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % carouselItems.length;
+        updateCarousel();
+      });
+
+      function updateCarousel() {
+        carouselInner.style.transform = `translateX(-${currentIndex * 100}%)`;
+      }
+    });
+  </script>
+</body>
+</html>
